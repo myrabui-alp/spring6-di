@@ -16,9 +16,10 @@ class Spring6DiApplicationTests {
     MyController myController;
 
     @Test
-    void testAutowiredOfController(){
+    void testAutowiredOfController() {
         System.out.println(myController.sayHello());
     }
+
     @Test
     void testGetControllerFromCtx() {
         MyController myController = applicationContext.getBean(MyController.class);
